@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e5e7e6;
+}
+.headline {
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 36px;
+}
+.wrapper {
+    max-width: 963px;
+    margin: auto;
+}
+.country {
+    display: inline-block;
+}
+.country p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #d52248;
+    display: inline-block;
+}
+.country span {
+    font-weight: 800;
+}
+.country img {
+    margin-left: 11px;
+}
+.money:before {
+    content: "\e901";
+    font-size: 12px;
+    line-height: 12px;
+}
+.money {
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+    line-height: 12px;
+    margin-top: 2px;
+}
+.shop-btn {
+    height: 20px;
+    width: 88px;
+    background-color: #333639;
+    display: inline-block;
+    border-radius: 30px;
+    float: right;
+    color: white;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 12px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-right: 22px;
+    margin-top: 1px;
+}
+.shop-btn span{
+    color: white;
+    margin-right: 5px;
+}
+.login-btn {
+    height: 16px;
+    width: 67px;
+    background-color: #d0002f;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    margin-right: 22px;
+    margin-top: 3px;
+}
+.address {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 13px;
+    float: right;
+    margin-right: 43px;
+    margin-top: 2px;
+}
+.clr {
+    clear: both;
+}
+.container-logo {
+    max-width: 963px;
+    margin: auto;
+}
+.logo {
+    font-size: 35px;
+    margin-left: 40px;
+}
+form {
+    display: inline-block;
+    float: right;
+    margin-bottom: 12px;
+}
+.container-logo input {
+    width: 193px;
+    height: 26px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #333639;
+    border: none;
+    margin-top: 16px;
+    position: relative;
+}
+.search:after {
+    content: "\e905";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+}
+.clear {
+    clear: both;
+}
+.nav-menu {
+    height: 30px;
+    background-color: black;
+}

@@ -1,0 +1,67 @@
+
+@font-face {
+  font-family: 'ostrichsans_sansblack';
+  src: url('../fonts/ostrichsans_sansblack.eot');
+  src: url('../fonts/ostrichsans_sansblack.eot') format('embedded-opentype'),
+  url('../fonts/ostrichsans_sansblack.woff2') format('woff2'),
+  url('../fonts/ostrichsans_sansblack.woff') format('woff'),
+  url('../fonts/ostrichsans_sansblack.ttf') format('truetype'),
+  url('../fonts/ostrichsans_sansblack.svg#ostrichsans_sansblack') format('svg');
+}
+
+@font-face {
+  font-family: 'ps-font';
+  src:  url('../fonts/ps-font.eot?vzmsmo');
+  src:  url('../fonts/ps-font.eot?vzmsmo#iefix') format('embedded-opentype'),
+    url('../fonts/ps-font.ttf?vzmsmo') format('truetype'),
+    url('../fonts/ps-font.woff?vzmsmo') format('woff'),
+    url('../fonts/ps-font.svg?vzmsmo#ps-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ps-"], [class*=" ps-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ps-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ps-logo:before {
+  content: "\e909";
+}
+.ps-arrow:before {
+  content: "\e900";
+}
+.ps-dollar:before {
+  content: "\e901";
+}
+.ps-facebook:before {
+  content: "\e902";
+}
+.ps-location:before {
+  content: "\e903";
+}
+.ps-mail:before {
+  content: "\e904";
+}
+.ps-search:before {
+  content: "\e905";
+}
+.ps-shop:before {
+  content: "\e906";
+}
+.ps-twitter:before {
+  content: "\e907";
+}
+.ps-youtube:before {
+  content: "\e908";
+}
