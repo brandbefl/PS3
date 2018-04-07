@@ -44,19 +44,12 @@ header {
     margin-top: 2px;
 }
 .shop-btn {
-    height: 20px;
-    width: 88px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 19px;
     background-color: #333639;
-    display: inline-block;
-    border-radius: 30px;
-    float: right;
-    color: white;
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 12px;
-    padding-top: 2px;
-    box-sizing: border-box;
-    text-decoration: none;
     margin-right: 22px;
     margin-top: 1px;
 }
@@ -64,18 +57,20 @@ header {
     color: white;
     margin-right: 5px;
 }
-.login-btn {
-    height: 16px;
-    width: 67px;
-    background-color: #d0002f;
+.btns {
+    color: white;
+    text-decoration: none;
     box-sizing: border-box;
     border-radius: 30px;
-    font-size: 11px;
-    color: white;
-    text-align: center;
     display: inline-block;
-    text-decoration: none;
+    text-align: center;
     float: right;
+}
+.login-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #d0002f;
+    font-size: 11px;
     margin-right: 22px;
     margin-top: 3px;
 }
@@ -104,26 +99,97 @@ form {
     margin-bottom: 12px;
 }
 .container-logo input {
-    width: 193px;
+    width: 160px;
     height: 26px;
     box-sizing: border-box;
-    border-radius: 30px;
+    border-radius: 0 30px 30px 0;
     background-color: #333639;
     border: none;
     margin-top: 16px;
-    position: relative;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 12px;
+    line-height: 25px;
 }
-.search:after {
-    content: "\e905";
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: black;
+.search-btn {
+    width: 30px;
+    height: 26px;
+    box-sizing: border-box;
+    border-radius: 30px 0 0 30px;
+    background-color: #333639;
+    border: none;
+    margin-top: 16px;
+    float:right;
 }
-.clear {
-    clear: both;
+.search::-webkit-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #6e7072;
+    font-size: 12px;
 }
-.nav-menu {
-    height: 30px;
+.search-icon {
+    color: #6e7072;
+    font-size: 12px;
+}
+nav {
+    background: -moz-linear-gradient(90deg, #000000 0%, #424242 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #424242), color-stop(100%, #000000)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, #000000 0%, #424242 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, #000000 0%, #424242 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #000000 0%, #424242 100%); /* ie10+ */
+    background: linear-gradient(0deg, #000000 0%, #424242 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+}
+.menu-contain {
+    max-width: 963px;
+    margin: auto;
+}
+
+
+.menu {
+    display: inline-block;
+    color: white;
+    font-family: 'ostrichsans_sansblack';
+    float: left;
+}
+.menu a {
+    display: block;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.drop-down a {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+li.menu a {
+    line-height: 40px;
+}
+a:link, a:visited  {
+    color: white;
+    text-decoration: none;
+}
+.ul-menu li:hover {
     background-color: black;
+}
+.drop-down li {
+    background-color: rgba(65,65,65, 0.8);
+    border-bottom: 1px solid #515055;
+}
+.drop-down li:hover {
+    background-color: black;
+}
+.search-btn:focus, .container-logo input:focus {
+    outline: none;
+}
+.drop-down {
+    position: absolute;
+    display: none;
+}
+ul.ul-menu > li:hover > ul.drop-down {
+    display: block;
+}
+.drop-down {
+    background-color: RGBA(0,0,0,0.7);
+    list-style: none;
+    padding: 7px;
 }
