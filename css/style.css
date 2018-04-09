@@ -187,9 +187,85 @@ a:link, a:visited  {
 }
 ul.ul-menu > li:hover > ul.drop-down {
     display: block;
+    z-index: 2;
 }
 .drop-down {
     background-color: RGBA(0,0,0,0.7);
     list-style: none;
     padding: 7px;
 }
+.wrapper-red {
+    background-color: #d0002f;
+}
+.container {
+    max-width: 965px;
+    margin: auto;
+}
+
+#slider-container {
+    position: relative;
+}
+.block-abs {
+    width: 401px;
+    background-color: rgba(208,0,47,0.8);
+    position: absolute;
+    z-index: 1;
+    height: 405px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.block-abs h1 {
+    color: white;
+    font-family: 'ostrichsans_sansblack';
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+.block-abs p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 51px;
+}
+.lm-btn {
+    font-family: 'ostrichsans_sansblack';
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-right: 28px;
+    padding-left: 26px;
+    line-height: 35px;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    background: -moz-linear-gradient(90deg, #262626 0%, #d6d6d6 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d6d6d6), color-stop(100%, #262626)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, #262626 0%, #d6d6d6 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, #262626 0%, #d6d6d6 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #262626 0%, #d6d6d6 100%); /* ie10+ */
+    background: linear-gradient(0deg, #262626 0%, #d6d6d6 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#262626',GradientType=0 ); /* ie6-9 */
+}
+.owl-dot:after {
+    font-family: 'ps-font';
+    content: "\e90a";
+    font-size: 7px;
+    margin-left: 5px;
+    color: white;
+}
+.owl-dot:focus {
+    outline:none;
+}
+.owl-dot:hover:after {
+    color: #d0012f;
+}
+.active:after {
+    color: #d0012f;
+}
+.owl-dots {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
